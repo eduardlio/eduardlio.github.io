@@ -31,6 +31,9 @@ nav{
 	margin-top: 2px;
 	color: #393939;
 }
+# logo a{
+	color: #393939;
+}
 #logo a:visited{
 	color: #393939;
 }
