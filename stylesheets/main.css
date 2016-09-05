@@ -1,0 +1,169 @@
+*{
+	padding: 0;
+	margin: 0;
+	top: 0;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+}
+li{
+	list-style-type: none;
+}
+a{	
+	text-decoration:none;
+}
+
+header{
+	margin: 0;
+	height: 45px;
+	background-color: #FEFEFE;
+	color: #393939;
+}
+
+nav{
+	padding: 10px 20px;
+}
+#logo{
+	float: left;
+	height: 42px;
+	line-height: 38px;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+#logo a:visited{
+	color: #393939;
+}
+
+nav{
+	float:right;
+	margin-bottom: 2px;
+}
+
+nav li{
+	display: inline-block;
+}
+nav a{
+	padding: 8px;
+	color: #393939;
+}
+
+.home-content{
+	background-color: #393939;
+	width: 100%;
+}
+
+
+
+
+
+
+
+/*Boom box*/
+.boombox{
+	margin: 0 auto;
+	height: 600px;
+	position: relative;
+}
+.parallax.parallax-1{
+	background-image: url("../images/edit/image4.png");
+}
+.parallax.parallax-2{
+	background-image: url("../images/edit/image1.png");
+}
+.parallax.parallax-3{
+	background-image: url("../images/edit/image2.png");
+}
+.parallax{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	color: #FEFEFE;
+}
+.parallax div{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	margin: 0;
+}
+.parallax div h1{
+	position: absolute;
+	top: 50%; left: 50%;
+	font-size: 40px;
+	transform: translate(-50%, -50%);
+
+}
+
+
+button{
+	background-color: #FEFEFE;
+	border: 2px solid #00BFBF;
+	padding: 10px;
+	margin-top: 10px;
+	width: 100px;
+}
+button:hover{
+	background-color: #00BFBF;
+	color: #FEFEFE;
+	border: 2px solid #FEFEFE;
+	transition: 0.2s;
+}
+
+/* Brief ABout Section */
+.text-box{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	background-color: #00BFBF;
+	text-align: center;
+}
+.text-wrap{
+	width:35%;
+	margin: 0 auto;
+	line-height: 2;
+	padding: 50px 0;
+	color: #FEFEFE;
+}
+
+/* footer */
+footer{
+	height: 200px;
+	background-color: #023e3e;
+	color: #FEFEFE;
+	width: 100%;
+	position: relative;
+}
+.foot-wrap{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+}
+.foot-wrap div{
+	width: 33.3%;
+	float: left;
+	line-height: 20px;
+}
+.quick-links-foot{
+	margin: 0 auto;
+}
+.foot-wrap div h2{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.foot-wrap div li{
+	font-size: 12px;
+}
+.contact-foot{
+	text-align: right;
+}
+.quick-links-foot{
+	text-decoration: none;
+	text-align: center;
+}
+.quick-links-foot li{
+	list-style-type: none;
+}
+.quick-links-foot a{
+	color: #FEFEFE;
+}
