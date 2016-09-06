@@ -31,7 +31,7 @@ nav{
 	margin-top: 2px;
 	color: #393939;
 }
-# logo a{
+#logo a{
 	color: #393939;
 }
 #logo a:visited{
@@ -106,13 +106,13 @@ button{
 	margin-top: 10px;
 	width: 100px;
 }
-button:hover{
+button:hover, button:active{
 	background-color: #00BFBF;
 	color: #FEFEFE;
 	border: 2px solid #FEFEFE;
 	transition: 0.2s;
+	outline:none;
 }
-
 /* Brief ABout Section */
 .text-box{
 	width: 100%;
