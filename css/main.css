@@ -142,9 +142,10 @@ footer{
 	top: 50%; left: 50%;
 	transform: translate(-50%,-50%);
 	width: 50%;
+	min-width: 
 }
 .foot-wrap div{
-	width: 33.3%;
+	width: 33.33%;
 	float: left;
 	line-height: 20px;
 }
@@ -170,4 +171,26 @@ footer{
 }
 .quick-links-foot a{
 	color: #FEFEFE;
+}
+@media only screen and (min-width : 100px) and (max-width : 829px){
+	footer{
+		height: 500px;
+	}
+	.foot-wrap{
+		display: inline-block;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	.foot-wrap div{
+		width: 100%;
+		float: left;
+		height: auto;
+		clear: both;
+		margin: 20px auto;
+	}
+	.foot-wrap > div >*{
+		text-align: center;
+	}
+
 }
