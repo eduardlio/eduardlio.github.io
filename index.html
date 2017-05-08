@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Eduardo</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/hover.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<title>Eduardlio</title>
+	<link rel="stylesheet" href="css/new.css">
+	<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Trocchi|Work+Sans" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h2 id="logo"><a href = "index.html">Edward Liao</a></h2>
-		<nav>
-			<ul>
-				<li><a href="index.html" class ="hvr-underline-from-left">Home</a></li>
-				<li><a href="about.html" class ="hvr-underline-from-left">About Me</a></li>
-				<li><a href="folio.html" class ="hvr-underline-from-left">Portfolio</a></li>
-				<li><a href="contact.html" class ="hvr-underline-from-left">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section class="home-content">
-<!-- 
-		Boom box thing
- -->
-		<div class="boombox">
-
-			<div class="parallax parallax-1">
-				<div id="body">
-					<h1>Yooo this is me</h1>
-				</div>
-			</div>
+	<div class="boombox item-wrap">
+		<div class="header-wrap">
+			<h1 class="header">
+				Hi I'm <span id = "name-change">Ed</span> <br>and I love <br><span id="changer" class="pretty-underline">coffee</span>.
+			</h1>
+		</div>
+		<div class="header-contact">
+		<h1 class="header">socials</h1>
+			<h2 class="subheading">
+				<a href="https://github.com/eduardlio/">Github: Eduardlio</a>
+			</h2>
+			<h2 class="subheading">
+				<a href="https://au.linkedin.com/in/edward-liao-22559698">LinkedIn</a>
+			</h2>
+			<h2 class="subheading">
+				<a href="https://twitter.com/eduardlio">Twitter</a>
+			</h2>
 
 		</div>
-		
-		<div class = "text-box">
-			<div class ="text-wrap">
-				<h1>Heyoo</h1>
-				<p>Hey I'm Edward or Eddie or Eduardo. It's really up to you.</p>
-				<a href="about.html"><button>See more</button></a>
+	</div>
+	<div class="portfolio">
+	<span id="portfolio-start"></span>
+
+		<div class="item-wrap">
+		<span id="item1"></span>
+			<div class="content-left item-desc">
+				<h2 class="subheading">
+					item-desc
+				</h2>
+			</div>
+			<div class="content-right item-img">
+				<h2 class="subheading">
+					item-img
+				</h2>
 			</div>
 		</div>
-	</section>
 
-	<footer>
-		<section class="foot-wrap">
-			<div class="contact-foot">
-				<h2>Contact Us</h2>
-				<ul>
-					<li>Github: eduardlio</li>
-					<li>Linkedin: Edward Liao</li>
-					<li>Email: liao.edward@gmail.com</li>
-				</ul>
-			</div>
-			<div class="quick-links-foot">
-				<h2>Links</h2>
-				<ul>
-				<li><a href="index.html" class ="hvr-underline-from-left">Home</a></li>
-				<li><a href="about.html" class ="hvr-underline-from-left">About Me</a></li>
-				<li><a href="folio.html" class ="hvr-underline-from-left">Portfolio</a></li>
-				<li><a href="contact.html" class ="hvr-underline-from-left">Contact</a></li>
+		<div class="item-wrap">
+		<span id="item2"></span>
+			<div class="content-left item-img">
 
-				</ul>
 			</div>
-			<div class ="location-foot">
-				<h2>Hey what's this</h2>
-				<ul>
-					<li>Ooh it's a floated thing</li>
-					<li>I still gotta fix so many things up.</li>
-					<li>Bruh</li>
-				</ul>
-		</section>
-	</footer>
+			<div class="content-right item-desc">
+
+			</div>
+		</div>
+
+		<div class="item-wrap">
+		<span id="item3"></span>
+			<div class="content-left item-desc">
+
+			</div>
+			<div class="content-right item-img">
+
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="js/jquery.scrollify.js"></script>
+	<script src="js/main.js"></script>
 </body>
-
 </html>
