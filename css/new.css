@@ -46,10 +46,19 @@ a{
 	text-align: right;
 	flex-grow: 1;
 	align-self: flex-end;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	/*border: 1px solid black;*/
 }
+.subheading-serif,
 .subheading{
 	font-size: 2em;
+}
+.subheading{
 	font-family: "Work Sans", sans-serif;
+}
+.subheading-serif{
+	font-family: "Arbutus Slab", serif;
 }
 
 /* items */
@@ -60,10 +69,15 @@ a{
 }
 .item-wrap div{
 	flex-grow: 1;
+	width: 50%;
 }
+
 .item-desc{
 	background-color: #BBB;
 }
 .item-img{
 	background-color: #111;
+}
+.item-img *{
+	color: #FFF;
 }

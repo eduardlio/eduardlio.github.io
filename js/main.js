@@ -22,6 +22,7 @@ function randomName(){
 $(function (){
 	$.scrollify({
 		section: ".item-wrap",
-		sectionName: ".item-wrap"
+		sectionName: ".item-wrap",
+		scrollbars: false
 	})
 });
