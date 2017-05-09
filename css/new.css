@@ -2,10 +2,20 @@
 *{
 	padding:0;
 	margin: 0;
+	font-family: "Work Sans", sans-serif;
 }
 a{
 	text-decoration: none;
 	color: #202020;
+	transition: color, .2s;
+}
+a:hover{
+	color:#A0A0A0;
+}
+ul{
+	list-style-type: none;
+	padding-left: 2em;
+	font-size: 2.5em;
 }
 /*pretty underline by /u/spryes (permalink to post: https://www.reddit.com/r/web_design/comments/56ry1u/styling_underlines_on_the_web/d8lw8vr/)*/
 .pretty-underline {
@@ -24,32 +34,44 @@ a{
 	height: 100vh;
 	width: 100%;
 	/*background-color: #AAA;*/
+}
+.boombox >*{width:100%;}
+
+.column-flex{
 	display: flex;
 	flex-direction: column;
-}
-.boombox div{
-
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .header-wrap{
 	/*border: 1px solid black;*/
-	margin-top:50px;
-	margin-left: 50px;
-	width: auto;
+	flex-grow: 2;
+	margin: 50px;
 }
-.header{
+.header, .header *, .work-heading{
 	font-family: 'Trocchi', serif;
 	color: #202020;
-	font-size: 6em;
-}
-
-.header-contact{
-	text-align: right;
-	flex-grow: 1;
-	align-self: flex-end;
-	margin-bottom: 50px;
-	margin-right: 50px;
+	/*flex-grow: 1;*/
 	/*border: 1px solid black;*/
+}
+.header{
+	width: 100%;
+	font-size:6em;
+}
+.work-heading{
+	margin-top: 20px;
+	font-size: 3em;
+}
+.header-contact{
+	flex-grow: 1;
+	text-align: right;
+	align-self: flex-end;
+	margin: 50px;
+	margin-top: 0;
+	/*border: 1px solid black;*/
+	
 }
 .subheading-serif,
 .subheading{
@@ -61,15 +83,20 @@ a{
 .subheading-serif{
 	font-family: "Arbutus Slab", serif;
 }
+.center-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#tuner{
+	text-align: center;
+}
 
 /* items */
 .item-wrap{
 	height: 100vh;
-	display: flex;
-	flex-direction: row;
 }
 .item-wrap div{
-	flex-grow: 1;
 	width: 50%;
 }
 
