@@ -1,4 +1,4 @@
-var interests = ["bouldering", "web design", "espresso", "my v60 pourover", "overhangs and dynos", "startups", "reading", "learning", "coffee"];
+var interests = ["bouldering", "web design", "espresso", "my v60 pourover", "startups", "reading", "learning", "coffee", "doing", "meditating"];
 var interestCounter = 0;
 setInterval(function(){
 	if(interestCounter==interests.length){interestCounter=0;}
