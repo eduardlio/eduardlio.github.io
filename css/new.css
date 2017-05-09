@@ -68,8 +68,7 @@ ul{
 	flex-grow: 1;
 	text-align: right;
 	align-self: flex-end;
-	margin: 50px;
-	margin-top: 0;
+	margin-right: 50px;
 	/*border: 1px solid black;*/
 	
 }
