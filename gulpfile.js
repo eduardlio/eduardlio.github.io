@@ -12,14 +12,14 @@ gulp.task('css', function(){
 		.pipe(sass({outputStyle:'compressed'}))
 		.pipe(autoprefixer())
 		.pipe(cleanCSS())
-		.pipe(gulp.dest('build/styles'))
+		.pipe(gulp.dest('styles'))
 });
 gulp.task('html', function(){
 	gulp.src('source/pug/*.pug')
 		.pipe(pug({
 			pretty: true
 		}))
-		.pipe(gulp.dest('build'))
+		.pipe(gulp.dest(''))
 });
 gulp.task('js', function(){
 	gulp.src([
@@ -28,7 +28,7 @@ gulp.task('js', function(){
 		])
 		.pipe(concat('output.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('build/js'))
+		.pipe(gulp.dest('js'))
 });
 gulp.task('watch', function(){
 	gulp.watch('source/sass/*.sass', ['css']);
