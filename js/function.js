@@ -21,9 +21,11 @@ $(document).scroll(function() {
 	  if ($document.scrollTop() >= (windowHeight * 0.8)) {
 		// user scrolled 50 pixels or more;
 		// do stuff
-		$(".navi-fade").fadeIn(700);
+		// $(".navi-fade").fadeIn(800);
+		$("header").fadeIn(800);
 	  }
 	  else {
-		 $(".navi-fade").fadeOut(300);
+		//   $(".navi-fade").fadeOut(300);
+		  $("header").fadeOut(100);
 	  }
 });
