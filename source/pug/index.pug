@@ -12,7 +12,7 @@ html(lang="en")
     body#top
         .background-full
             a#contact
-            header
+            header.font_color
                 span.font_color
                     a.scroll.font_color(href='#top') Edward Liao | Rogue Learning
                 ul.navi-fade.scroll
@@ -23,7 +23,7 @@ html(lang="en")
                     li
                         a.scroll(href='#research') Research
                     li
-                        a.scroll(href="#about-text") Me
+                        a.scroll(href="#about") Me
                     li
                         a.scroll(href='#contact') Contact
 
@@ -38,6 +38,8 @@ html(lang="en")
                     a.scroll(href="#project", style={color:'rgb(255,255,255)'}) Project &amp; Process
                 .research.font_color(style={color:"rgb(255,255,255)"})
                     a.scroll(href="#research", style={color:'rgb(255,255,255)'}) Research
+                .contact-link.font_color(style={color:"rgb(255,255,255)"})
+                    a.scroll(href="#contact", style={color:'rgb(255,255,255)'}) Contact
             #product.detail.sections
                 i.em.em-telescope
                 .text-wrap
@@ -58,7 +60,7 @@ html(lang="en")
                     p
                         include texts/research.md
             #about.detail.about
-                p.me#about-text Heyo I'm Eduardo and I was one of the Developer/Designers of Team Rogue Learning
+                p.me#about-text Heya I'm Edward/Eddie/Eduardo. Developer/designer/ researcher for Rogue Learning
         br
         br
         .contact
