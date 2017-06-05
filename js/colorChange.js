@@ -1,3 +1,6 @@
+var $document = $(document),
+		windowHeight = $(window).height(),
+		windowWidth = $(window).width();
 var tStart = 30 // Start transition 100px from top
     , tEnd = 500   // End at 500px
     , cStart = [30, 30, 30]
@@ -5,6 +8,15 @@ var tStart = 30 // Start transition 100px from top
     , cDiff = [cEnd[0] - cStart[0], cEnd[1] - cStart[1], cEnd[1] - cStart[0]];
 	
 $(document).ready(function(){
+    if ($document.scrollTop() ===0) {
+			// user scrolled 50 pixels or more;
+			// do stuff
+			// $(".navi-fade").fadeIn(800);
+			$(".background-full").css('background-color', 'rgb(30,30,30)');
+	  }
+      else{
+          $(".background-full").css('background-color', 'rgb(255,255,255)');
+      }
     $(document).scroll(function() {
         var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
         p = Math.min(1, Math.max(0, p)); // Clamp to [0, 1]
