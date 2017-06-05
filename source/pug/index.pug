@@ -4,9 +4,11 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='https://afeld.github.io/emoji-css/emoji.css')
+        link(rel='icon', href='img/logo.png')
         link(rel='stylesheet', href='styles/main.css')
         link(rel='stylesheet', href='styles/other.css')
-        title Document
+        title Edward Liao | DECO3850
     body#top
         .background-full
             a#contact
@@ -37,19 +39,24 @@ html(lang="en")
                 .research.font_color(style={color:"rgb(255,255,255)"})
                     a.scroll(href="#research", style={color:'rgb(255,255,255)'}) Research
             #product.detail.sections
+                i.em.em-telescope
                 .text-wrap
                     h2 Spandx
                     p 
                         include texts/product.md
+            
             #project.detail.sections
+                i.em.em-star2
                 .text-wrap
                     h2 Project and Process
                     p
-                        include texts/product.md
+                        include texts/project.md
             #research.detail.sections
+                i.em.em-rocket
+                .text-wrap
                     h2 Background research
                     p
-                        include texts/product.md
+                        include texts/research.md
             #about.detail.about
                 p.me#about-text Heyo I'm Eduardo and I was one of the Developer/Designers of Team Rogue Learning
         br
