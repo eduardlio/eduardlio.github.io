@@ -2167,7 +2167,39 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left-body {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left-body:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 13.5px;
+  background: #FF8FC7;
+  opacity: 0.5;
+  height: 10px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, 
+.hvr-underline-from-left:focus:before, 
+.hvr-underline-from-left:active:before,
+.hvr-underline-from-left-body:hover:before, 
+.hvr-underline-from-left-body:focus:before, 
+.hvr-underline-from-left-body:active:before
+ {
   right: 0;
 }
 
