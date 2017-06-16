@@ -9,7 +9,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1200);
 	});
-	var data = ["web designer", "web developer", "rock climber", "developer", "part-time coffee addict"]
+	var data = ["web developer", "rock climber", "developer", "part-time coffee addict", "web designer"]
 	var interestCounter = 0;
 	setInterval(function(){
 		if(interestCounter==data.length){interestCounter=0;}
