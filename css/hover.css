@@ -2423,7 +2423,7 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  top: -5px;
+  top: 0px;
   overflow: hidden;
 }
 .hvr-underline-from-left:before {
@@ -2432,9 +2432,10 @@
   z-index: -1;
   left: 0;
   right: 100%;
-  bottom: 0;
+  opacity: 0.5;
+  bottom: -1.5px;
   background: #00BFBF;
-  height: 2.5px;
+  height: 20px;
   -webkit-transition-property: right;
   transition-property: right;
   -webkit-transition-duration: 0.2s;

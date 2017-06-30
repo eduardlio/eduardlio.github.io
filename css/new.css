@@ -6,17 +6,29 @@
 }
 a{
 	text-decoration: none;
-	color: #202020;
+	color: #606060;
 	transition: color, .2s;
 }
 a:hover{
-	color:#A0A0A0;
+	color:#000;
 }
-ul{
+.item{
 	list-style-type: none;
 	padding-left: 2em;
 	font-size: 2.5em;
+	width: 100%;
 }
+.work-heading{
+	margin-top: 20px;
+	font-size: 3em;
+}
+.working-on{
+	position: absolute;
+	width: 80%;
+	/*background-color: pink;*/
+	bottom: 5vh;
+}
+
 /*pretty underline by /u/spryes (permalink to post: https://www.reddit.com/r/web_design/comments/56ry1u/styling_underlines_on_the_web/d8lw8vr/)*/
 .pretty-underline {
     text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px #fff;
@@ -35,7 +47,7 @@ ul{
 	width: 100%;
 	/*background-color: #AAA;*/
 }
-.boombox >*{width:100%;}
+/*.boombox >*{width:100%;}*/
 
 .column-flex{
 	display: flex;
@@ -60,18 +72,15 @@ ul{
 	width: 100%;
 	font-size:6em;
 }
-.work-heading{
-	margin-top: 20px;
-	font-size: 3em;
-}
+
 .header-contact{
 	flex-grow: 1;
 	text-align: right;
 	align-self: flex-end;
 	margin-right: 50px;
 	/*border: 1px solid black;*/
-	
 }
+
 .subheading-serif,
 .subheading{
 	font-size: 2em;
@@ -95,9 +104,9 @@ ul{
 .item-wrap{
 	height: 100vh;
 }
-.item-wrap div{
+/*.item-wrap div{
 	width: 50%;
-}
+}*/
 
 .item-desc{
 	background-color: #BBB;
