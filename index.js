@@ -1,3 +1,7 @@
+$("document").ready(function(){
+
+   changeActive(0);
+});
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
    sMisc = document.getElementById("skill-misc");
