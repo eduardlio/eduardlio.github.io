@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+*{
+   font-family: 'Open Sans', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+.arrow-thing{
+   display: block;
+   width: 100%;
+   height: 300px;
+   position: relative;
+}
+.arrow, #right, #text {
+   position: absolute;
+   top: 50%; left: 50%;
+   transform: translate(-50%, -50%);
+}
+.arrow{
+   width: 150px;
+   height: 70px;
+   border: 3px solid black;
+   transition: .3s all;
+}
+#text{
+   font-weight: bold;
+   opacity: 0;
+   transition: .6s all;
+}
+#right{
+   width: 100px;
+   stroke: black;
+   stroke-width: 5px;
+   fill: none;
+   margin: 0;
+   transition: .5s all;
+}
+#right *{
+   stroke-linecap: round;
+   stroke-dasharray: 50;
+   stroke-dashoffset: 0;
+   transition: .5s all;
+}
+#right line{
+   stroke-dashoffset: 0;
+   stroke-dasharray: 159;
+}
+
+.arrow:hover{
+   cursor: pointer;
+   transition: .3s all;
+   border-color: pink;
+}
+.arrow:hover #right{
+   margin-left: 10px;
+   transition: .5s all;
+}
+.arrow:hover #right *{
+   stroke: pink;
+   transition: .5s all;
+}
+.arrow:hover #rightarr{
+   stroke-dashoffset: -147;
+   transition: .5s all;
+}
+.arrow:hover #text{
+   opacity: 1;
+   transition: .6s all;
+   transition-delay: 0.6s all;
+}
