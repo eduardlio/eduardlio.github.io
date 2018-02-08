@@ -22,7 +22,8 @@ nav{
 }
 .wrap{
    height: 100%;
-   width: 100%;
+   width: 30%;
+   min-width: 700px; 
    margin: 0 auto;
    display: flex;
    flex-direction: row;
@@ -45,9 +46,10 @@ nav{
    cursor: pointer;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
    .wrap{
       width: 100%;
+      min-width: 0px;
    }
    .navigation{
       margin-right: 20px;
@@ -142,7 +144,7 @@ ABOUT styling
    fill: none;
    stroke-width: 1px;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
    .about-me-desc{
       top: 40%;
       width: 100%;
@@ -163,7 +165,11 @@ Skills styling
    position: absolute;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
-
+}
+@media screen and (max-width: 900px){
+   .skill-comp{
+      width: 100%;
+   }
 }
 .skill-wrap{
    background-color: #eee;
@@ -216,9 +222,20 @@ Skills styling
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
 }
+.desc-list{
+   margin: 30px auto;
+}
+.desc-list p{
+   margin-top: 10px;
+}
+
 @media screen and (max-width: 700px){
+   .skill-desc h2,p{
+      text-align: center
+   }
    .skill-wrap{
       box-shadow: none;
+      width: 100%;
    }
    .skill-comp{
       width: 100%;
@@ -236,4 +253,4 @@ Skills styling
    .desc-list p{
       margin-top: 10px;
 
-}
+   }
