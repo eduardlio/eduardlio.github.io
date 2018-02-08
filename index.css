@@ -13,6 +13,10 @@ general STYLING
 li{
    list-style-type: none;
 }
+a{
+   text-decoration: none;
+   color: black;
+}
 /**************************************
 NAV STYLING
  *************************************/
@@ -159,6 +163,8 @@ Skills styling
 .skills{
    height: 700px;
    position: relative;
+   background-color: white;
+   margin-bottom: 500px;
 }
 .skill-comp{
    width: 900px;
@@ -238,6 +244,7 @@ Skills styling
       width: 100%;
    }
    .skill-comp{
+      background: white;
       width: 100%;
    }
    .skills-desc{
@@ -252,5 +259,37 @@ Skills styling
    }
    .desc-list p{
       margin-top: 10px;
-
    }
+}
+footer{
+   position: fixed;
+   z-index: -1;
+   left: 0;
+   bottom: 0;
+   padding: 0;
+   width: 100%;
+   height: 500px;
+   background-color: pink;
+}
+.foot-nav{
+   position: absolute;
+   top: 50%; left: 30%;
+   transform: translate(-50%, -50%);
+}
+.foot-nav *{
+   margin: 10px auto;
+   font-weight: bold;
+   font-size: 1.4em;
+   height: 25%;
+   color: rgba(240, 240, 240, 0.4);
+}
+.foot-nav a:hover{
+   color: rgba(255, 255, 255, 0.8);
+   text-decoration: line-through;
+}
+      
+@media screen and (max-width: 900px){
+   .foot-nav *{
+      color: rgba(255, 255, 255, 0.8);
+   }
+}
