@@ -1,6 +1,11 @@
 $("document").ready(function(){
-
    changeActive(0);
+
+   var width = $(window).width();
+   var docwidth = $(document).width();
+   $("#width").text("width: " + width);
+   $("#docwidth").text("docwidth: " + docwidth);
+
 });
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
