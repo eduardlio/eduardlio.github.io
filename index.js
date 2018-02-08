@@ -1,11 +1,19 @@
 $("document").ready(function(){
    changeActive(0);
+});
 
-   var width = $(window).width();
-   var docwidth = $(document).width();
-   $("#width").text("width: " + width);
-   $("#docwidth").text("docwidth: " + docwidth);
+$("#ham").on("click", function(){
+   if($("#navi").hasClass("responsive")){
+      $("#navi").removeClass("responsive");
+   } else {
+      $("#navi").addClass("responsive");
+   }
 
+   if($("#ham").hasClass("ham-active")){
+      $("#ham").removeClass("ham-active");
+   } else {
+      $("#ham").addClass("ham-active");
+   }
 });
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
