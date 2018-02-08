@@ -67,7 +67,6 @@ function changeActive(number){
       langs+="<h2 id='lang-head'>Languages/Skills</h2><p>";
       for( let k in skills[number].languages ){
          langs+=skills[number].languages[k];
-         console.log("adding: " + skills[number].languages[k]);
          if( k <  skills[number].languages.length-1 ){
             langs+=", ";
          }
