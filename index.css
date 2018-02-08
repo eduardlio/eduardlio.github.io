@@ -23,6 +23,9 @@ NAV STYLING
 nav{
    height: 160px;
 }
+nav *{
+   user-select: none;
+}
 .wrap{
    height: 100%;
    width: 50%;
@@ -45,10 +48,12 @@ nav{
 #ham path{
    transition: .2s all;
    stroke: black;
-   stroke-width: 3px;
+   stroke-width: 8px;
+   stroke-linecap: round;
    fill: none;
 }
 .navigation{
+   transition: .2s all;
    display: block;
    height: 80px;
 }
@@ -74,6 +79,7 @@ nav{
       display: none;
    }
    .navigation.responsive{
+      transition: .2s all;
       display: block;
       position: absolute;
       top: 160px;
@@ -81,26 +87,28 @@ nav{
       width: 100%;
    }
    .navigation.responsive p{
+      transition: .2s all;
       padding: 0;
       width: 100%;
       background-color: rgba(30, 30, 30, 0.8);
       color: white;
    }
    .navigation.responsive p:hover{
+      transition: .2s all;
       color: rgba(30, 30, 30, 1);
       background-color: #eee;
    }
    .ham-active #top-ham{
-   transition: .2s all;
+      transition: .2s all;
       transform-origin: 16px 40px;
       transform: rotate(45deg);
    }
    .ham-active #mid-ham{
-   transition: .2s all;
+      transition: .2s all;
       opacity: 0;
    }
    .ham-active #low-ham{
-   transition: .2s all;
+      transition: .2s all;
       transform-origin: 22px 64px;
       transform: rotate(-45deg);
    }
@@ -280,7 +288,12 @@ Skills styling
       width: 100%;
    }
    .skill-name{
-      width: 33.333%;
+      width: 25%;
+      transition: .2s all;
+   }
+   .active-skill{
+      width: 50%;
+      transition: .2s all;
    }
    .skill-desc h2,p{
       text-align: center
@@ -333,7 +346,7 @@ footer{
    color: rgba(255, 255, 255, 0.8);
    text-decoration: line-through;
 }
-      
+
 @media screen and (max-width: 900px){
    .foot-nav *{
       color: rgba(255, 255, 255, 0.8);

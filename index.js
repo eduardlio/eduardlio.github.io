@@ -15,6 +15,7 @@ $("#ham").on("click", function(){
       $("#ham").addClass("ham-active");
    }
 });
+
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
    sMisc = document.getElementById("skill-misc");
