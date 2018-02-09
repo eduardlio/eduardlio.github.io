@@ -1,21 +1,6 @@
 $("document").ready(function(){
    changeActive(0);
 });
-
-$("#ham").on("click", function(){
-   if($("#navi").hasClass("responsive")){
-      $("#navi").removeClass("responsive");
-   } else {
-      $("#navi").addClass("responsive");
-   }
-
-   if($("#ham").hasClass("ham-active")){
-      $("#ham").removeClass("ham-active");
-   } else {
-      $("#ham").addClass("ham-active");
-   }
-});
-
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
    sMisc = document.getElementById("skill-misc");
