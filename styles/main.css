@@ -90,7 +90,7 @@ nav *{
       transition: .2s all;
       display: block;
       position: absolute;
-      top: 160px;
+      top: 100px;
       z-index: 3;
       width: 100%;
    }

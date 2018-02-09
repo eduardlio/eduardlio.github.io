@@ -34,7 +34,16 @@ $(window).scroll(function(){
    changeText();
 });
 function changeText(){
-   var pane = Math.floor((scrollPos+100)/400);
-   $("#current-text").text(items[pane].name);
-   $("#current-sub").text(items[pane].desc);
+   var pane = Math.floor((scrollPos+70)/800);
+   if(pane >= 4){
+      $("#current-div").fadeOut();
+   } else {
+
+      $("#current-div").fadeIn();
+      $("#current-text").text(items[pane].name);
+      $("#current-sub").text(items[pane].desc);
+      $("#current-text").attr({
+         href: items[pane].link
+      });
+   }
 }
