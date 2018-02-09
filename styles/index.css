@@ -53,7 +53,7 @@ ABOUT styling
 Skills styling
  *************************************/
 .skills{
-   height: 600px;
+   height: 700px;
    position: relative;
    background-color: white;
    margin-bottom: 500px;
@@ -122,6 +122,9 @@ Skills styling
 }
 
 @media screen and (max-width: 1000px){
+   .skills{
+      height: 600px;
+      }
    .skill-comp{
       width: 100%;
    }
