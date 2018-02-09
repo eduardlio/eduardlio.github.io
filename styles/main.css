@@ -75,6 +75,9 @@ nav *{
 }
 
 @media screen and (max-width: 700px){
+   nav{
+      height: 100px;
+   }
    .wrap{
       width: 100%;
       min-width: 0px;
