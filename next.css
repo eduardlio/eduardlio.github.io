@@ -7,26 +7,28 @@
 .arrow-thing{
    display: block;
    width: 100%;
-   height: 300px;
+   height: 100%;
    position: relative;
 }
-.arrow, #right, #text {
+.arrow, .right, #text {
    position: absolute;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
 }
 .arrow{
+   transform: translate(-50%, 100%);
    width: 150px;
    height: 70px;
-   border: 3px solid black;
+   border: 3px solid rgba(0, 0, 0, 1);
    transition: .3s all;
 }
 #text{
    font-weight: bold;
+   color: pink;
    opacity: 0;
    transition: .6s all;
 }
-#right{
+.right{
    width: 100px;
    stroke: black;
    stroke-width: 5px;
@@ -34,13 +36,13 @@
    margin: 0;
    transition: .5s all;
 }
-#right *{
+.right *{
    stroke-linecap: round;
    stroke-dasharray: 50;
    stroke-dashoffset: 0;
    transition: .5s all;
 }
-#right line{
+.right line{
    stroke-dashoffset: 0;
    stroke-dasharray: 159;
 }
@@ -48,18 +50,19 @@
 .arrow:hover{
    cursor: pointer;
    transition: .3s all;
-   border-color: pink;
+   border-color: rgba(255, 192, 203, 0);
 }
-.arrow:hover #right{
+.arrow:hover .right{
    margin-left: 10px;
    transition: .5s all;
 }
-.arrow:hover #right *{
+.arrow:hover .right *{
    stroke: pink;
    transition: .5s all;
 }
 .arrow:hover #rightarr{
-   stroke-dashoffset: -147;
+   stroke-dashoffset: -160 ;
+   stroke-dasharray: 220;
    transition: .5s all;
 }
 .arrow:hover #text{

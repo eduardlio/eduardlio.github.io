@@ -72,11 +72,13 @@ Skills styling
 }
 .skill-head{
    margin: 30px auto;
+   margin-bottom: 0;
    text-align: center;
 }
 .skills-desc{
    width: 650px;
    margin: 40px auto;
+   margin-top: 0;
    text-align: center;
 }
 .skill-tabs{

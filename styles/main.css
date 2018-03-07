@@ -16,6 +16,12 @@ li{
 a{
    text-decoration: none;
    color: black;
+   background-color: none;
+   transition: .2s all;
+}
+a:hover{
+   cursor: pointer;
+   transition: .2s all;
 }
 /**************************************
 NAV STYLING
@@ -91,7 +97,7 @@ nav *{
       display: block;
       position: absolute;
       top: 100px;
-      z-index: 3;
+      z-index: 9999;
       width: 100%;
    }
    .navigation.responsive a{

@@ -1,12 +1,6 @@
 var scrollPos = $(window).scrollTop();
 var items = [
    {
-      name: "Crank Indoor Climbing",
-      id: "item-crank",
-      desc: "Redesign",
-      link: "crank.html"
-   },
-   {
       name: "Random Rosetta",
       id: "item-rrs",
       desc: "Development, Angular",
@@ -38,12 +32,11 @@ function changeText(){
    if(pane >= 4){
       $("#current-div").fadeOut();
    } else {
-
       $("#current-div").fadeIn();
       $("#current-text").text(items[pane].name);
       $("#current-sub").text(items[pane].desc);
-      $("#current-text").attr({
-         href: items[pane].link
-      });
+    //  $("#current-text").attr({
+     //    href: items[pane].link
+      //});
    }
 }

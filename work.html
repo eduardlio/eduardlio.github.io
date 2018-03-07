@@ -6,6 +6,7 @@
       <title>Edward Liao | Work</title>
       <link rel="stylesheet" href="styles/main.css">
       <link rel="stylesheet" href="styles/work.css">
+      <link rel="stylesheet" href="next.css">
    </head>
    <body>
       <nav>
@@ -19,8 +20,8 @@
             </a>
             <div id="navi" class="navigation">
                <a href="work.html">Work</a>
-               <a>About</a>
-               <a>Contact</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
             </div>
             <svg id="ham" data-name="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                <path style="stroke-linecap:round;" id="top-ham" d="M 0,25 L 100,25"/>
@@ -31,28 +32,90 @@
       </nav>
 
       <div class="work-content">
-
-         <div id="current-div">
-            <h1><a id="current-text">Projects</a></h1>
+         <!--
+            <div id="current-div">
+            <h1 id="current-text">Projects</h1>
             <p id="current-sub"></p>
-         </div>
-
-         <div class="item" id="item-crank">
-            <img class="item-img" src="#" alt="">
-         </div>
+            </div>
+         -->
 
          <div class="item" id="item-rrs">
-            <img class="item-img" src="#" alt="">
+            <div class="item-wrap">
+               <h1 class="proj_name">Random Rosetta</h1>
+               <p class="quickdesc">A random coding exercise generator.</p>
+               <p class="linkto">Read more</p>
+            </div>
+
+            <div id="rrs-profile" class="project-profile">
+               <div class="profile-content-wrap">
+                  <h2 class="proj_title">Random Rosetta</h2>
+                  <em class="profile_mini_desc">A random coding exercise generator.</em>
+                  <p class="profile_desc">Random Rosetta Code is a mini web-app that allows 
+                  users to randomly pick a programming exercise from the Rosetta Code website 
+                  so that they don't have to decide for themselves. I developed random rosetta 
+                  code for myself initially but I've had friends use it for themselves. </p>
+                  <p class="profile_desc" >This was a great project to work on to learn the 
+                  basics of Angular 4 and to take things beyond a simple tutorial. </p>
+                  <p class="profile_desc">See it in action <a href="https://ng-rrs.herokuapp.com">here</a></p>
+               </div>
+               <div class="next_button">
+                  <strong>next</strong>
+               </div>
+            </div>
          </div>
 
          <div class="item" id="item-convict">
-            <img class="item-img" src="#" alt="">
+            <div class="item-wrap">
+               <h1 class="proj_name">Convict Life</h1>
+               <p class="quickdesc">An exploratory learning tool for primary school students</p>
+               <p class="linkto">Read more</p>
+            </div>
+
+            <div id="cl-profile" class="project-profile">
+               <div class="profile-content-wrap">
+                  <h2 class="proj_title">Convict Life</h2>
+                  <em class="profile_mini_desc">An exploratory learning tool for primary school students.</em>
+                  <p class="profile_desc">Convict Life is a university project dedicated to teaching primary school 
+                  students the life of a convict during Australia's convict era. This project 
+                  gave me the chance to design and develop a system that used a government API 
+                  to display information in an interesting way. </p>
+                  <p class="profile_desc">A full scope of the work invovled can be found 
+                  <a href="https://eduardlio.github.io/1800-Portfolio/index.html">here</a></p>
+               </div>
+               <div class="next_button">
+                  <strong>next</strong>
+               </div>
+            </div>
+
+         </div>
+         <div class="item">
+            <div class="item-wrap">
+               <h1 class="proj_name">Other Project Websites</h1>
+               <p class="quickdesc">A compilation of websites that showcase other projects.</p>
+               <p class="linkto">Read more</p>
+            </div>
          </div>
 
-         <div id="item-portfolios" class="item">
-            <img class="item-img" src="#" alt="">
-         </div>
+         <!--
 
+            <div class="item" id="item-rrs">
+
+            <div class="item-img">
+            </div>
+
+            </div>
+
+            <div class="item" id="item-convict">
+            <div class="item-img">
+            </div>
+            </div>
+
+            <div id="item-portfolios" class="item">
+            <p class="item-img"></p>
+
+            </div>
+
+         -->
       </div>
 
       <footer>

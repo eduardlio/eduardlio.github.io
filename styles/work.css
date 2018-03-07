@@ -1,32 +1,87 @@
 #current-div{
-   z-index: 9999;
+   z-index:800; 
    position: fixed;
    top: 200px;
    left: 100px;
+   width: 150px;
+   height: 80px;
+   min-height: 80px;
+   padding: 20px;
+   background-color: pink;
+   box-shadow: 10px 10px 0px 0px rgb(255, 255, 255);
+}
+.work-content{
+   margin-bottom: 500px;
 }
 .item{
    width: 100%;
-   height: 800px;
+   height: 500px;
    position: relative;
    background-color: white;
 }
 
-.item-img{
+.item-wrap{
+   display: none;
    width: 80%;
-   height: 600px;
    position: absolute;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
 }
-
-#item-crank{
+.proj_name{
+   width: 100%;
+   font-size: 4em;
 }
+.item-wrap p{
+   display: inline-block;
+}
+.linkto{
+   margin-top: 20px;
+   text-decoration: underline;
+}
+
+.project-profile{
+   width: 80%;
+   position: absolute;
+   top: 50%; left: 50%;
+   transform: translate(-50%, -50%);
+}
+.project-profile p, .profile-content-wrap em{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.profile-content-wrap{
+   width: 100%;
+}
+.proj_title{
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+.profile_mini_desc{
+   color: rgb(60, 60, 60);
+}
+.next_button{
+   background-color: pink;
+   width: 100%;
+   height: 100px;
+   position: relative;
+}
+.next_button strong{
+   font-size: 2.5em;
+   margin: 0;
+   position: absolute;
+   top: 50%; left: 50%;
+   transform: translate(-50%, -50%);
+}
+.profile_desc a{
+   text-decoration: underline;
+   color: rgba(30, 30, 30, 1);
+}
+
 #item-rrs{
 }
 #item-convict{
 }
 #item-portfolios{
-   margin-bottom: 500px;
 }
 @media screen and (max-width: 700px){
    #current-div{
@@ -38,9 +93,6 @@
    .work-content{
       width: 100%;
       height: 100%;
-   }
-   .item-img{
-      height: 100%;
-      width: 100%;
+   margin-bottom: 500px;
    }
 }
