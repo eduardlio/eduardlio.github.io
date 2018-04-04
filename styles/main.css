@@ -64,6 +64,7 @@ nav *{
    height: 80px;
 }
 .navigation a {
+   z-index: 999;
    text-decoration: none;
    font-weight: bold;
    margin: 0;
@@ -77,6 +78,7 @@ nav *{
 .navigation a:hover{
    cursor: pointer;
    padding-bottom: 2px;
+   border-bottom: 1px solid rgba(20, 20, 20, 1);
 }
 @media screen and (max-width: 700px){
    nav{
