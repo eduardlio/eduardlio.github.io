@@ -1,3 +1,11 @@
+.bottom-most{
+   margin-bottom: 500px;
+}
+.module a:hover{
+   background-color: pink;
+   color: white;
+}
+   
 /**************************************
 ABOUT styling
  *************************************/
@@ -19,6 +27,7 @@ ABOUT styling
 .subtitle{
    font-size: 0.8em;
    transition: .2s all;
+   text-align: center;
    color: rgba(200, 200, 200, 1);
 }
 .subtitle:hover{
@@ -28,10 +37,10 @@ ABOUT styling
 .main-text{
    font-size: 2em;
 }
-#scrolldown{
-   width: 150px;
+.resumeget{
+   width: 200px;
    position: absolute;
-   top: 80%;
+   top: 85%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
@@ -56,7 +65,6 @@ Skills styling
    height: 700px;
    position: relative;
    background-color: white;
-   margin-bottom: 500px;
 }
 .skill-comp{
    width: 900px;
@@ -89,7 +97,7 @@ Skills styling
    font-weight: bold;
 }
 .skill-name{
-   width: 300px;
+   width: 25%;
    display: inline-block;
    text-align: center;
    height: 50px;
@@ -105,6 +113,7 @@ Skills styling
    background-color: #ddd;
 }
 .skill-name.active-skill{
+   width: 50%;
    background-color: pink;
    color: white;
 }
@@ -163,3 +172,34 @@ Skills styling
       margin-top: 10px;
    }
 }
+/**************************************
+CURRENT PROJECT styling
+ *************************************/
+.current_project{
+   height: 700px;
+   padding-top: 50px;
+   background-color: white;
+   width: 100%;
+   position: relative;
+}
+.project_center_wrap{
+   max-width: 700px;
+   width: 50%;
+   position: absolute;
+   top: 50%; left: 50%;
+   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1000px){
+   .project_center_wrap{
+      width: 80%;
+   }
+}
+.current_project *{
+   margin-bottom: 10px;
+   line-height: 1.5em;
+}
+.current_project_header{
+   font-size: 1.5em;
+   text-align: center;
+}
+

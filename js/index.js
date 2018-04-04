@@ -18,7 +18,7 @@ var skills = [
          "RDBMS"
       ],
       tools: [
-         "Git", "Vim"
+         "Git", "Vim", "Sublime"
       ]
    },
    {
@@ -27,7 +27,7 @@ var skills = [
       desc: "",
       languages: [
          "User Testing", "User Research", "UX Design", "UI Design",
-         "Mockups", "Wireframing"
+         "Mockups", "Wireframing", "Data Visualization", "Graphic Design"
       ],
       tools: [
          "Adobe Illustrator", "Invision", "MarvelApp"
@@ -50,6 +50,28 @@ for( let i in skills ){
    cSkill.addEventListener("click", function(e){
       changeActive(i);
    });
+}
+$(".navigation").on("click", "a", function(){
+   var go = "";
+   switch(this.id){
+      case ("nav0"):
+         go="#aboutme";
+         scrollToThe(go);
+         break;
+      case ("nav1"):
+         go="#currentproj";
+         scrollToThe(go);
+         break;
+      case ("nav2"):
+         go="#contactfoot";
+         window.scrollTo(0,document.body.scrollHeight);
+         break;
+   }
+});
+
+function scrollToThe(id){
+   console.log(id);
+   $("html, body").animate({scrollTop: $(id).offset().top}, 1000, "swing");
 }
 
 function changeActive(number){

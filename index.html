@@ -11,39 +11,42 @@
       <nav>
          <div class="wrap">
             <a href="index.html">
-            <svg id="logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216">
-               <line id="first-line"x1="58" y1="43.08" x2="158" y2="43.08" />
-               <line x1="58" y1="100.59" x2="133.69" y2="100.59" />
-               <polyline points="67.27 132.23 67.27 172.92 138.8 172.92" />
-            </svg></a>
-            <div id="navi" class="navigation">
-               <a href="work.html">Work</a>
-               <a href="about.html">About</a>
-               <a href="contact.html">Contact</a>
-            </div>
-            <svg id="ham" data-name="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-               <path style="stroke-linecap:round;" id="top-ham" d="M 0,25 L 100,25"/>
-               <path style="stroke-linecap:round;" id="mid-ham" d="M 0,50 L 100,50"/>
-               <path style="stroke-linecap:round;" id="low-ham" d="M 0,75 L 100,75"/>
-            </svg>
+               <svg id="logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216">
+                  <line id="first-line"x1="58" y1="43.08" x2="158" y2="43.08" />
+                  <line x1="58" y1="100.59" x2="133.69" y2="100.59" />
+                  <polyline points="67.27 132.23 67.27 172.92 138.8 172.92" />
+               </svg></a>
+               <div id="navi" class="navigation">
+                  <a href="#" id="nav0"> About</a>
+                  <a href="#" id="nav1">Current Project</a>
+                  <a href="#" id="nav2" >Contact</a>
+               </div>
+               <svg id="ham" data-name="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                  <path style="stroke-linecap:round;" id="top-ham" d="M 0,25 L 100,25"/>
+                  <path style="stroke-linecap:round;" id="mid-ham" d="M 0,50 L 100,50"/>
+                  <path style="stroke-linecap:round;" id="low-ham" d="M 0,75 L 100,75"/>
+               </svg>
          </div>
       </nav>
-      <div class="about">
+      <div class="about module" id="aboutme">
          <div class="about-me-desc">
             <h1>Hey, I'm Edward</h1>
             <p class="subtitle">Or Eddie or Ed or Eduardo</p>
             <p class="main-text">I'm a front-end developer and a UX/UI Designer. I love coding, climbing and coffee</p>
          </div>
-         <svg id="scrolldown" data-name="scrolldown" xmlns="http:///www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <line id="downline" x1="50" y1="20" x2="50" y2="70"/>
-            <path d="
-            M 45,75
-            L 50,80
-            L 55,75"/>
-         </svg>
+         <div class="resumeget">
+            <a href="assets/EdwardLiaoResume.pdf">Looking for the resume?</a>
+            <svg id="scrolldown" data-name="scrolldown" xmlns="http:///www.w3.org/2000/svg" viewBox="0 0 100 100">
+               <line id="downline" x1="50" y1="20" x2="50" y2="70"/>
+               <path d="
+               M 45,75
+               L 50,80
+               L 55,75"/>
+            </svg>
+         </div>         
       </div> 
 
-      <div class="skills">
+      <div class="skills module">
          <div class="skill-comp">
             <h1 class="skill-head">Skills</h1>
             <p class="skills-desc">Tools and skills I've been using for design and development. I've added an extra little miscellaneous section because, hey, we might just bond over something else right?
@@ -62,14 +65,31 @@
             </div>
          </div>
       </div>
+      <div class="current_project bottom-most module" id="currentproj">
+         <div class="project_center_wrap">
+            <h1 class="current_project_header">Current Project: Real Engine</h1>
+            <p class="subtitle">A game engine for the real world</p>
+            <p>In a partnership with the University of Queensland and Real Engine, we have begun 
+            developing a visual scripting language for Real Engine: The Game engine for the real 
+            world. By using actors, RFID chips and scanners and GPS, users are completely and 
+            literally immersed in the game.</p>
+            <p>My role as designer of the team is to design the overall "language" of the system. 
+            The challenge of this project lies in its interpretability but I'm determined that 
+            this project will give me a lot of room to explore the different aspects of interaction 
+            design.  </p>
+            <p>To stay in the loop with this project, feel free to contact me at 
+            <a href="mailto:liao.edward@gmail.com">liao.edward@gmail.com</a>
+            </p>
+         </div>
+      </div>
 
       <footer>
          <div class="foot-nav">
-            <ul class="foot-ul">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="work.html">Work</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a></li>
+            <ul class="foot-ul"></ul> 
+            <li id="contactfoot"><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/eduardlio">Github</a></li>
+            <li><a href="https://behance.com/eduardlio">Behance</a></li>
+            <li><a href="https://linkedin.com/in/edward-liao">LinkedIn</a></li>
             </ul>
          </div>
       </footer>
