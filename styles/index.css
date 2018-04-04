@@ -1,6 +1,10 @@
 .bottom-most{
    margin-bottom: 500px;
 }
+.module a{
+   background-color: rgba(0, 0, 0, 0);
+   color: black;
+}
 .module a:hover{
    background-color: pink;
    color: white;
@@ -19,7 +23,7 @@ ABOUT styling
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -40%);
 }
 .about-me-desc *{
    text-align: center;
@@ -38,11 +42,14 @@ ABOUT styling
    font-size: 2em;
 }
 .resumeget{
-   width: 200px;
-   position: absolute;
-   top: 85%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   width: 250px;
+   margin: 0 auto;
+}
+.resumeget a{
+   padding: 5px;
+}
+#scrolldown{
+   width: 100%;
 }
 #scrolldown *{
    stroke: rgb(200, 200, 200);
