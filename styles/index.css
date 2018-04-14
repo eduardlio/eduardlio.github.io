@@ -9,7 +9,21 @@
    background-color: pink;
    color: white;
 }
-   
+.transform-wrap{
+   position: absolute;
+   width: 100%;
+   height: auto;
+   z-index: 0;
+   transform: translateY(160px);
+}
+nav{
+   z-index: 9999;
+   height: 160px;
+   width: 100%;
+   background-color: white;
+   position: fixed;
+}
+
 /**************************************
 ABOUT styling
  *************************************/

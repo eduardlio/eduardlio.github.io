@@ -1,6 +1,3 @@
-$("document").ready(function(){
-   changeActive(0);
-});
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
    sMisc = document.getElementById("skill-misc");
@@ -45,6 +42,9 @@ var skills = [
       tools: []
    }
 ];
+$("document").ready(function(){
+   changeActive(0);
+});
 for( let i in skills ){
    var cSkill = skills[i].elem;
    cSkill.addEventListener("click", function(e){
@@ -53,6 +53,7 @@ for( let i in skills ){
 }
 $(".navigation").on("click", "a", function(){
    var go = "";
+   var NAV_HEIGHT = 160;
    switch(this.id){
       case ("nav0"):
          go="#aboutme";
@@ -68,11 +69,11 @@ $(".navigation").on("click", "a", function(){
          break;
    }
 });
-
 function scrollToThe(id){
    console.log(id);
    $("html, body").animate({scrollTop: $(id).offset().top}, 1000, "swing");
 }
+
 
 function changeActive(number){
    var active = skills[number].elem;
