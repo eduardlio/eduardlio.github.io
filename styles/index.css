@@ -12,7 +12,7 @@
 .transform-wrap{
    position: absolute;
    width: 100%;
-   height: auto;
+   height: calc(100% - 500px);
    z-index: 0;
    transform: translateY(160px);
    transition: .2s all;

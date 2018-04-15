@@ -3,6 +3,7 @@ var   sDev  = document.getElementById("skill-dev"),
    sMisc = document.getElementById("skill-misc");
 var skills = [ sDev, sDes, sMisc ];
 var currentDiv = 0;
+var moving = false;
 
 var skills = [
    {
@@ -93,56 +94,39 @@ function changeActive(number){
    $("#tool-list").html(tools);
 };
 
-$(".navigation").on("click", "a", function(){
-   var go = "";
-   var NAV_HEIGHT = 160;
-   switch(this.id){
-      case ("nav0"):
-         scrollToId(0);
-         break;
-      case ("nav1"):
-         scrollToId(1);
-         break;
-      case ("nav2"):
-         scrollToId(2);
-         break;
-      case ("nav3"):
-         scrollToid(3);
-         break;
-   }
-});
-
-// thanks to StackOverflow answer: 
-// https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event   
-var lastScrollTop = 0;
-$(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-      if(currentDiv <4){
-         scrollDown();
+if(!moving){
+   $(".navigation").on("click", "a", function(){
+      var go = "";
+      var NAV_HEIGHT = 160;
+      switch(this.id){
+         case ("nav0"):
+            scrollToId(0);
+            break;
+         case ("nav1"):
+            scrollToId(1);
+            break;
+         case ("nav2"):
+            scrollToId(2);
+            break;
+         case ("nav3"):
+            scrollToId(3);
+            break;
       }
-   } else {
-      if(currentDiv > 0) {
-         scrollUp();
-      }
-   }
-   lastScrollTop = st;
-});
-function scrollToThe(id){
-   console.log(id);
-   $("html, body").animate({scrollTop: $(id).offset().top}, 1000, "swing");
+   });
 }
 
 function scrollToId(id){
+   moving = true;
    var distance = (700 * id);
-   console.log("distance: " + distance + "px");
    $("html, body").animate({
       scrollTop: distance
-   }, 100, "swing");
+   }, 800, "swing", function(){
+      moving = false;
+   });
 
    //var distance = 160 + (700 * (1+ currentDiv - id));
    //$(".transform-wrap").css({
-      //transform: "translateY("+distance+"px)"
+   //transform: "translateY("+distance+"px)"
    //}, 2000, "swing");
 };
 function scrollUp(){
