@@ -15,6 +15,7 @@
    height: auto;
    z-index: 0;
    transform: translateY(160px);
+   transition: .2s all;
 }
 nav{
    z-index: 9999;
