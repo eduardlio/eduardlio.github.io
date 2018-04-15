@@ -80,6 +80,9 @@ nav *{
    padding-bottom: 2px;
    border-bottom: 1px solid rgba(20, 20, 20, 1);
 }
+.responsive a{
+   opacity: 0;
+}
 @media screen and (max-width: 700px){
    nav{
       height: 100px;
@@ -101,11 +104,13 @@ nav *{
       width: 100%;
    }
    .navigation.responsive a{
+      border: none;
       text-align: center;
       transition: .2s all;
       padding: 0;
+      opacity: 1;
       width: 100%;
-      background-color: rgba(30, 30, 30, 0.8);
+      background-color: rgba(30, 30, 30);
       color: white;
    }
    .navigation.responsive a:hover{

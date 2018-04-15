@@ -1,9 +1,10 @@
 var   sDev  = document.getElementById("skill-dev"),
    sDes  = document.getElementById("skill-des"),
    sMisc = document.getElementById("skill-misc");
+
 var skills = [ sDev, sDes, sMisc ];
+
 var currentDiv = 0;
-var moving = false;
 
 var skills = [
    {
@@ -38,8 +39,8 @@ var skills = [
       desc: "",
       languages: [
          "Route setting", "Filter Coffee", "Rock climbing", 
-         "Watching Binging with Babish Videos", "Morse Code",
-         "Binge-listening to podcasts"
+         "Podcasts (Akimbo by Seth Godin)",
+         "Books (Meditations by Marcus Aurelius)"
       ],
       tools: []
    }
@@ -94,34 +95,31 @@ function changeActive(number){
    $("#tool-list").html(tools);
 };
 
-if(!moving){
-   $(".navigation").on("click", "a", function(){
-      var go = "";
-      var NAV_HEIGHT = 160;
-      switch(this.id){
-         case ("nav0"):
-            scrollToId(0);
-            break;
-         case ("nav1"):
-            scrollToId(1);
-            break;
-         case ("nav2"):
-            scrollToId(2);
-            break;
-         case ("nav3"):
-            scrollToId(3);
-            break;
-      }
-   });
-}
+$(".navigation").on("click", "a", function(){
+   var go = "";
+   var NAV_HEIGHT = 160;
+   switch(this.id){
+      case ("nav0"):
+         scrollToId(0);
+         break;
+      case ("nav1"):
+         scrollToId(1);
+         break;
+      case ("nav2"):
+         scrollToId(2);
+         break;
+      case ("nav3"):
+         scrollToId(3);
+         break;
+   }
+});
 
 function scrollToId(id){
-   moving = true;
    var distance = (700 * id);
    $("html, body").animate({
       scrollTop: distance
    }, 800, "swing", function(){
-      moving = false;
+      console.log("done");
    });
 
    //var distance = 160 + (700 * (1+ currentDiv - id));
