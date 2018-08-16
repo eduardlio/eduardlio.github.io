@@ -14,7 +14,7 @@
    width: 100%;
    height: calc(100% - 500px);
    z-index: 0;
-   transform: translateY(160px);
+   transform: translateY(130px);
    transition: .2s all;
 }
 nav{
@@ -28,7 +28,7 @@ nav{
 /**************************************
 ABOUT styling
  *************************************/
-.about{
+#about{
    width: 100%;
    background-color: #eee;
    height: 700px;
@@ -79,6 +79,9 @@ ABOUT styling
    #scrolldown{
       top: 70%;
    }
+}
+.module{
+   background-color: white;
 }
 /**************************************
 Skills styling
