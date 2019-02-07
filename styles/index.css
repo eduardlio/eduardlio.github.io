@@ -8,6 +8,7 @@
 .module a:hover{
    background-color: pink;
    color: white;
+   border-bottom: white;
 }
 .transform-wrap{
    position: absolute;
@@ -62,6 +63,7 @@ ABOUT styling
 }
 .resumeget a{
    padding: 5px;
+   border-bottom: 1px solid black;
 }
 #scrolldown{
    width: 100%;
