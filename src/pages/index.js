@@ -15,7 +15,7 @@ const IndexPage = () => {
             excerpt
             frontmatter {
               title
-              date
+              date(formatString: "D MMMM YYYY")
             }
             fields {
               slug
