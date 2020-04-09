@@ -2,21 +2,27 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+const whatDo = [
+  "I smash my head against a keyboard for 8 hours a day",
+  "I blabber on about coffee and javascript",
+  "I constantly ask people if they want to go bouldering",
+  "I am a front end dev",
+]
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      background: `#DFAAD3`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `5.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1>
         <Link
           to="/"
           style={{
@@ -27,6 +33,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <h3 style={{ color: `white` }}>
+        {whatDo[Math.floor(Math.random() * 3)]} at blackbook.ai
+      </h3>
     </div>
   </header>
 )
