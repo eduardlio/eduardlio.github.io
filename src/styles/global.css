@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav a,
+nav a:hover,
+nav a:visited,
+nav a:active,
+nav a:focus {
+  text-decoration: none;
+  color: white;
+}
