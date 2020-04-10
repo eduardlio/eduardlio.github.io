@@ -1,30 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "@emotion/styled"
-import { Global, css } from "@emotion/core"
 
 import Layout from "../components/layout"
+import "./blog-post.css"
 
-const Wrapper = styled.div``
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <Wrapper>
-        <Global
-          styles={css`
-            h1 {
-              color: #dfaad3;
-            }
-            li {
-              margin-bottom: 0.3rem;
-            }
-          `}
-        />
-        <h1>{post.frontmatter.title}</h1>
+      <div className="blogpost">
+        <h1 style={{}}>{post.frontmatter.title}</h1>
         <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Wrapper>
+      </div>
     </Layout>
   )
 }
