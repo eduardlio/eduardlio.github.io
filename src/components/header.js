@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import ListLink from './listlink'
 
 const whatDo = [
   "I smash my head against a keyboard for 8 hours a day",
@@ -34,8 +35,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <h3 style={{ color: `white` }}>
-        {whatDo[Math.floor(Math.random() * 3)]} at blackbook.ai
+        {whatDo[Math.floor(Math.random() * 3)]}
       </h3>
+      <nav>
+        <ListLink to="/about">About</ListLink>
+      </nav>
     </div>
   </header>
 )

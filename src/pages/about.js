@@ -5,6 +5,6 @@ export default props => {
 	return <Layout>
         <SEO title="About"/>
 		<h1>About me</h1>
-		<p>I"m ed (@eduardlio on pretty much all the socials) and I'm a front end dev at blackbook.ai</p>
+		<p>I'm Ed (@eduardlio on pretty much all the socials) and I'm a front end dev at blackbook.ai</p>
 	</Layout>
 }

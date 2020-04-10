@@ -6,6 +6,8 @@ export default props => (
 		display: 'inline-block',
 		marginRight: '0.3rem'
 	}}>
-		<Link to={props.to}>{props.children}</Link>
+		<Link to={props.to} style={{
+			color: `white`
+		}}>{props.children}</Link>
 	</li>
 )

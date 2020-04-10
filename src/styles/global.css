@@ -1,12 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-nav a,
-nav a:hover,
-nav a:visited,
-nav a:active,
-nav a:focus {
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
   text-decoration: none;
-  color: white;
 }
