@@ -3,9 +3,6 @@ title: "Keeping myself sane working from home"
 date: "2020-04-10"
 tags: ["covid", "meditation", "entertainment"]
 ---
-
-> Note: A lot of this post is just me complaining about working from home. It's stressful, sure, but I cannot emphasise enough how grateful I am to be working right now. 
-
 For the last few weeks, I've been working from home. Knowing it was going to be a weird to adapt to, I decided on a routine which I thought would work:
 
 1. Get up at 7am
