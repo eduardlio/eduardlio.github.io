@@ -34,9 +34,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <h3 style={{ color: `white` }}>
+      {/* <h3 style={{ color: `white` }}>
         {whatDo[Math.floor(Math.random() * 3)]}
-      </h3>
+      </h3> */}
       <nav>
         <ListLink to="/about">About</ListLink>
       </nav>
