@@ -1,3 +1,6 @@
+:root{
+	--standardColor: #dfaad3;
+}
 .blogpost blockquote {
   background-color: #eee;
   padding: 1.2rem 1.5rem;
@@ -8,9 +11,16 @@
   content: "💡 ";
 }
 .blogpost h1 {
-  color: #dfaad3;
+  color: var(--standardColor);
   line-height: 2.6rem;
 }
 .blogpost li {
 	margin-bottom: 0.3rem;
+}
+
+.blogpost a {
+	background-color:  var(--standardColor);
+	padding: 0 0.4rem;
+	border-radius: 2px;
+	color: white;
 }
