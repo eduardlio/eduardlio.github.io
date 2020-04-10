@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{"3XHS":function(t,c,e){"use strict";e.r(c);e("q1tI");var n=e("Bl7J"),a=e("vrFN"),l=e("qKvR");c.default=function(t){return Object(l.c)(n.a,null,Object(l.c)(a.a,{title:"About"}),Object(l.c)("h1",null,"About me"),Object(l.c)("p",null,"I'm Ed (@eduardlio on pretty much all the socials) and I'm a front end dev at blackbook.ai"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-8fd5812ab275a0dc1cc1.js.map
