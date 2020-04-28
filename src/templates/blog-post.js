@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import BlogComments from "../components/blogComments"
 import "./blog-post.css"
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark
+  const slug = post.fields.slug.split("/post")[1]
   return (
     <Layout>
       <div className="blogpost">
@@ -13,6 +15,7 @@ const BlogPost = ({ data }) => {
         <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
+      <BlogComments slug={slug}/>
     </Layout>
   )
 }
@@ -23,6 +26,9 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "D MMMM YYYY")
+      }
+      fields {
+        slug
       }
       html
       id
