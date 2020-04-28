@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import css from '@emotion/core'
 
 import CommentInput from "./blogCommentInput"
-const baseURL = "http://localhost:5000/api"
+//const baseURL = "http://localhost:5000/api"
 
-// "https://cors-anywhere.herokuapp.com/https://eduardlio-blog-comments.herokuapp.com/api/comments"
+const baseURL = "https://eduardlio-blog-comments.herokuapp.com/api"
 const BlogComments = props => {
   const { slug } = props
   const [comments, setComments] = useState([])
