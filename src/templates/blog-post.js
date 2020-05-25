@@ -15,7 +15,6 @@ const BlogPost = ({ data }) => {
         <p>{post.frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-      <BlogComments slug={slug}/>
     </Layout>
   )
 }
